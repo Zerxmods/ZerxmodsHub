@@ -526,4 +526,100 @@ local function C_21()
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then	
 			dragging = true	
 			dragStart = input.Position	
-			startPos = frame.Position= frame.Position
+			startPos = frame.Position	
+	
+			input.Changed:Connect(function()	
+				if input.UserInputState == Enum.UserInputState.End then	
+					dragging = false	
+				end	
+			end)	
+		end	
+	end)	
+	
+	frame.InputChanged:Connect(function(input)	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then	
+			dragInput = input	
+		end	
+	end)	
+	
+	userInputService.InputChanged:Connect(function(input)	
+		if input == dragInput and dragging then	
+			update(input)	
+		end	
+	end)	
+end;
+task.spawn(C_21);
+local function C_26()
+	local script = Zrx["LocalScript_26"];
+	local toOpen = script.Parent.Parent.Parent.Frame	
+	local toClose = script.Parent.Parent.Parent.LgL	
+	
+	script.parent.Activated:Connect(function()	
+	 toOpen.Visible = false	
+	 toClose.Visible = true	
+	end)	
+end;
+task.spawn(C_26);
+local function C_3a()
+	local script = Zrx["LocalScript_3a"];
+	local toOpen = script.Parent.Parent.Frame	
+	local toClose = script.Parent	
+	
+	script.Parent.Activated:Connect(function()	
+	 toOpen.Visible = true	
+	 toClose.Visible = false	
+	end)	
+end;
+task.spawn(C_3a);
+local function C_3b()
+	local script = Zrx["Delta_3b"];
+	local button = script.Parent	
+	local userInputService = game:GetService("UserInputService")	
+	
+	local dragging = false	
+	local dragInput	
+	local dragStart	
+	local startPos	
+	
+	local function update(input)	
+	    local delta = input.Position - dragStart	
+	    -- Menghitung posisi baru berdasarkan pergerakan mouse/jari	
+	    button.Position = UDim2.new(	
+	        startPos.X.Scale, 	
+	        startPos.X.Offset + delta.X, 	
+	        startPos.Y.Scale, 	
+	        startPos.Y.Offset + delta.Y	
+	    )	
+	end	
+	
+	-- Saat tombol mulai ditekan	
+	button.InputBegan:Connect(function(input)	
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then	
+	        dragging = true	
+	        dragStart = input.Position	
+	        startPos = button.Position	
+	
+	        -- Mengamati pergerakan input	
+	        input.Changed:Connect(function()	
+	            if input.UserInputState == Enum.UserInputState.End then	
+	                dragging = false	
+	            end	
+	        end)	
+	    end	
+	end)	
+	
+	-- Saat mouse/jari bergerak di atas tombol	
+	button.InputChanged:Connect(function(input)	
+	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then	
+	        dragInput = input	
+	    end	
+	end)	
+	
+	-- Update posisi secara global melalui UserInputService agar drag tidak "terlepas" saat gerak cepat	
+	userInputService.InputChanged:Connect(function(input)	
+	    if input == dragInput and dragging then	
+	        update(input)	
+	    end	
+	end)	
+end;
+task.spawn(C_3b);
