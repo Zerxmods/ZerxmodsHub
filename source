@@ -3,6 +3,7 @@ local Zrx = {};
 Zrx["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 Zrx["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 Zrx["ScreenGui_1"]["DisplayOrder"] = 9999;
+Zrx["ScreenGui_1"]["ResetOnSpawn"] = false;
 
 Zrx["Folder_2"] = Instance.new("Folder", Zrx["ScreenGui_1"]);
 
