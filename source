@@ -1,660 +1,575 @@
 local Zrx = {};
 
-Zrx["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-Zrx["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-Zrx["ScreenGui_1"]["DisplayOrder"] = 9999;
-Zrx["ScreenGui_1"]["ResetOnSpawn"] = false;
-
-Zrx["Folder_2"] = Instance.new("Folder", Zrx["ScreenGui_1"]);
-
-
-
-Zrx["Frame_3"] = Instance.new("Frame", Zrx["Folder_2"]);
-Zrx["Frame_3"]["Active"] = true;
-Zrx["Frame_3"]["SizeConstraint"] = Enum.SizeConstraint.RelativeYY;
-Zrx["Frame_3"]["BorderSizePixel"] = 0;
-Zrx["Frame_3"]["BackgroundColor3"] = Color3.fromRGB(54, 54, 54);
-Zrx["Frame_3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-Zrx["Frame_3"]["Size"] = UDim2.new(0, 532, 0, 300);
-Zrx["Frame_3"]["Position"] = UDim2.new(0, 444, 0, 178);
-
-
-Zrx["MainSelection_4"] = Instance.new("Frame", Zrx["Frame_3"]);
-Zrx["Frame_3"]["ZIndex"] = 10;
-Zrx["MainSelection_4"]["SizeConstraint"] = Enum.SizeConstraint.RelativeYY;
-Zrx["MainSelection_4"]["BorderSizePixel"] = 0;
-Zrx["MainSelection_4"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
-Zrx["MainSelection_4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-Zrx["MainSelection_4"]["Size"] = UDim2.new(0, 146, 0, 292);
-Zrx["MainSelection_4"]["Position"] = UDim2.new(0, 78, 0, 150);
-Zrx["MainSelection_4"]["Name"] = [[MainSelection]];
-
-
-Zrx["TextLabel_5"] = Instance.new("TextLabel", Zrx["MainSelection_4"]);
-Zrx["TextLabel_5"]["TextStrokeTransparency"] = 0;
-Zrx["TextLabel_5"]["BorderSizePixel"] = 0;
-Zrx["TextLabel_5"]["TextSize"] = 12;
-Zrx["TextLabel_5"]["TextStrokeColor3"] = Color3.fromRGB(154, 154, 154);
-Zrx["TextLabel_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel_5"]["TextDirection"] = Enum.TextDirection.RightToLeft;
-Zrx["TextLabel_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel_5"]["BackgroundTransparency"] = 1;
-Zrx["TextLabel_5"]["Size"] = UDim2.new(0, 84, 0, 36);
-Zrx["TextLabel_5"]["Text"] = [[ZERXMODS]];
-Zrx["TextLabel_5"]["Position"] = UDim2.new(0, 12, 0, -2);
-
-
-Zrx["UICorner_6"] = Instance.new("UICorner", Zrx["MainSelection_4"]);
-Zrx["UICorner_6"]["CornerRadius"] = UDim.new(0, 7);
-
-
-Zrx["UIGradient_7"] = Instance.new("UIGradient", Zrx["MainSelection_4"]);
-Zrx["UIGradient_7"]["Rotation"] = 75;
-Zrx["UIGradient_7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.722, Color3.fromRGB(135, 135, 135)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(135, 135, 135))};
-
-
-Zrx["M3_8"] = Instance.new("TextButton", Zrx["MainSelection_4"]);
-Zrx["M3_8"]["TextStrokeTransparency"] = 0;
-Zrx["M3_8"]["BorderSizePixel"] = 0;
-Zrx["M3_8"]["TextTransparency"] = 0.1;
-Zrx["M3_8"]["TextStrokeColor3"] = Color3.fromRGB(186, 186, 186);
-Zrx["M3_8"]["TextSize"] = 10;
-Zrx["M3_8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["M3_8"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
-Zrx["M3_8"]["Size"] = UDim2.new(0, 132, 0, 28);
-Zrx["M3_8"]["Text"] = [[Auto]];
-Zrx["M3_8"]["Name"] = [[M3]];
-Zrx["M3_8"]["Position"] = UDim2.new(0, 6, 0, 92);
-
-
-Zrx["UICorner_9"] = Instance.new("UICorner", Zrx["M3_8"]);
-
-
-
-Zrx["UIGradient_a"] = Instance.new("UIGradient", Zrx["M3_8"]);
-Zrx["UIGradient_a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
-
-
-Zrx["LocalScript_b"] = Instance.new("LocalScript", Zrx["M3_8"]);
-
-
-
-Zrx["M2_c"] = Instance.new("TextButton", Zrx["MainSelection_4"]);
-Zrx["M2_c"]["TextStrokeTransparency"] = 0;
-Zrx["M2_c"]["BorderSizePixel"] = 0;
-Zrx["M2_c"]["TextTransparency"] = 0.1;
-Zrx["M2_c"]["TextStrokeColor3"] = Color3.fromRGB(186, 186, 186);
-Zrx["M2_c"]["TextSize"] = 10;
-Zrx["M2_c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["M2_c"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
-Zrx["M2_c"]["Size"] = UDim2.new(0, 132, 0, 28);
-Zrx["M2_c"]["Text"] = [[Teleport]];
-Zrx["M2_c"]["Name"] = [[M2]];
-Zrx["M2_c"]["Position"] = UDim2.new(0, 6, 0, 61);
-
-
-Zrx["UICorner_d"] = Instance.new("UICorner", Zrx["M2_c"]);
-
-
-
-Zrx["UIGradient_e"] = Instance.new("UIGradient", Zrx["M2_c"]);
-Zrx["UIGradient_e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
-
-
-Zrx["LocalScript_f"] = Instance.new("LocalScript", Zrx["M2_c"]);
-
-
-
-Zrx["M1_10"] = Instance.new("TextButton", Zrx["MainSelection_4"]);
-Zrx["M1_10"]["TextStrokeTransparency"] = 0;
-Zrx["M1_10"]["BorderSizePixel"] = 0;
-Zrx["M1_10"]["TextTransparency"] = 0.1;
-Zrx["M1_10"]["TextStrokeColor3"] = Color3.fromRGB(186, 186, 186);
-Zrx["M1_10"]["TextSize"] = 10;
-Zrx["M1_10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["M1_10"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
-Zrx["M1_10"]["Size"] = UDim2.new(0, 132, 0, 28);
-Zrx["M1_10"]["Text"] = [[Main]];
-Zrx["M1_10"]["Name"] = [[M1]];
-Zrx["M1_10"]["Position"] = UDim2.new(0, 6, 0, 30);
-
-
-Zrx["UICorner_11"] = Instance.new("UICorner", Zrx["M1_10"]);
-
-
-
-Zrx["UIGradient_12"] = Instance.new("UIGradient", Zrx["M1_10"]);
-Zrx["UIGradient_12"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
-
-
-Zrx["LocalScript_13"] = Instance.new("LocalScript", Zrx["M1_10"]);
-
-
-
-Zrx["M4_14"] = Instance.new("TextButton", Zrx["MainSelection_4"]);
-Zrx["M4_14"]["TextStrokeTransparency"] = 0;
-Zrx["M4_14"]["BorderSizePixel"] = 0;
-Zrx["M4_14"]["TextTransparency"] = 0.1;
-Zrx["M4_14"]["TextStrokeColor3"] = Color3.fromRGB(186, 186, 186);
-Zrx["M4_14"]["TextSize"] = 10;
-Zrx["M4_14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["M4_14"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
-Zrx["M4_14"]["Size"] = UDim2.new(0, 132, 0, 28);
-Zrx["M4_14"]["Text"] = [[Misc]];
-Zrx["M4_14"]["Name"] = [[M4]];
-Zrx["M4_14"]["Position"] = UDim2.new(0, 6, 0, 123);
-
-
-Zrx["UICorner_15"] = Instance.new("UICorner", Zrx["M4_14"]);
-
-
-
-Zrx["UIGradient_16"] = Instance.new("UIGradient", Zrx["M4_14"]);
-Zrx["UIGradient_16"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
-
-
-Zrx["LocalScript_17"] = Instance.new("LocalScript", Zrx["M4_14"]);
-
-
-
-Zrx["M5_18"] = Instance.new("TextButton", Zrx["MainSelection_4"]);
-Zrx["M5_18"]["TextStrokeTransparency"] = 0;
-Zrx["M5_18"]["BorderSizePixel"] = 0;
-Zrx["M5_18"]["TextTransparency"] = 0.1;
-Zrx["M5_18"]["TextStrokeColor3"] = Color3.fromRGB(186, 186, 186);
-Zrx["M5_18"]["TextSize"] = 10;
-Zrx["M5_18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["M5_18"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
-Zrx["M5_18"]["Size"] = UDim2.new(0, 132, 0, 28);
-Zrx["M5_18"]["Text"] = [[Other]];
-Zrx["M5_18"]["Name"] = [[M5]];
-Zrx["M5_18"]["Position"] = UDim2.new(0, 6, 0, 154);
-
-
-Zrx["UICorner_19"] = Instance.new("UICorner", Zrx["M5_18"]);
-
-
-
-Zrx["UIGradient_1a"] = Instance.new("UIGradient", Zrx["M5_18"]);
-Zrx["UIGradient_1a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
-
-
-Zrx["LocalScript_1b"] = Instance.new("LocalScript", Zrx["M5_18"]);
-
-
-
-Zrx["startup_1c"] = Instance.new("Frame", Zrx["Frame_3"]);
-Zrx["startup_1c"]["BorderSizePixel"] = 0;
-Zrx["startup_1c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-Zrx["startup_1c"]["Size"] = UDim2.new(0, 288, 0, 170);
-Zrx["startup_1c"]["Position"] = UDim2.new(0, 202, 0, 64);
-Zrx["startup_1c"]["Name"] = [[startup]];
-Zrx["startup_1c"]["BackgroundTransparency"] = 1;
-
-
-Zrx["TextLabel2_1d"] = Instance.new("TextLabel", Zrx["startup_1c"]);
-Zrx["TextLabel2_1d"]["TextStrokeTransparency"] = 0;
-Zrx["TextLabel2_1d"]["BorderSizePixel"] = 0;
-Zrx["TextLabel2_1d"]["TextSize"] = 25;
-Zrx["TextLabel2_1d"]["TextStrokeColor3"] = Color3.fromRGB(133, 133, 133);
-Zrx["TextLabel2_1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel2_1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel2_1d"]["BackgroundTransparency"] = 1;
-Zrx["TextLabel2_1d"]["Size"] = UDim2.new(0, 96, 0, 54);
-Zrx["TextLabel2_1d"]["Text"] = [[Keyless]];
-Zrx["TextLabel2_1d"]["Name"] = [[TextLabel2]];
-Zrx["TextLabel2_1d"]["Position"] = UDim2.new(0, 140, 0, 64);
-
-
-Zrx["TextLabel_1e"] = Instance.new("TextLabel", Zrx["startup_1c"]);
-Zrx["TextLabel_1e"]["TextStrokeTransparency"] = 0;
-Zrx["TextLabel_1e"]["BorderSizePixel"] = 0;
-Zrx["TextLabel_1e"]["TextSize"] = 25;
-Zrx["TextLabel_1e"]["TextStrokeColor3"] = Color3.fromRGB(133, 133, 133);
-Zrx["TextLabel_1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel_1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel_1e"]["BackgroundTransparency"] = 1;
-Zrx["TextLabel_1e"]["Size"] = UDim2.new(0, 96, 0, 54);
-Zrx["TextLabel_1e"]["Text"] = [[Simple]];
-Zrx["TextLabel_1e"]["Position"] = UDim2.new(0, 66, 0, 36);
-
-
-Zrx["TextLabel3_1f"] = Instance.new("TextLabel", Zrx["startup_1c"]);
-Zrx["TextLabel3_1f"]["TextStrokeTransparency"] = 0;
-Zrx["TextLabel3_1f"]["BorderSizePixel"] = 0;
-Zrx["TextLabel3_1f"]["TextSize"] = 10;
-Zrx["TextLabel3_1f"]["TextStrokeColor3"] = Color3.fromRGB(133, 133, 133);
-Zrx["TextLabel3_1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel3_1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextLabel3_1f"]["BackgroundTransparency"] = 1;
-Zrx["TextLabel3_1f"]["Size"] = UDim2.new(0, 58, 0, 54);
-Zrx["TextLabel3_1f"]["Text"] = [[V0.0.1]];
-Zrx["TextLabel3_1f"]["Name"] = [[TextLabel3]];
-Zrx["TextLabel3_1f"]["Position"] = UDim2.new(0, 70, 0, 60);
-
-
-Zrx["DeltaWindow_20"] = Instance.new("LocalScript", Zrx["Frame_3"]);
-Zrx["DeltaWindow_20"]["Name"] = [[DeltaWindow]];
-
-
-Zrx["UIStroke_21"] = Instance.new("UIStroke", Zrx["Frame_3"]);
-Zrx["UIStroke_21"]["Transparency"] = 0.5;
-Zrx["UIStroke_21"]["Thickness"] = 5;
-
-
-Zrx["CloseB_22"] = Instance.new("TextButton", Zrx["Frame_3"]);
-Zrx["CloseB_22"]["BorderSizePixel"] = 0;
-Zrx["CloseB_22"]["TextSize"] = 9;
-Zrx["CloseB_22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["CloseB_22"]["BackgroundColor3"] = Color3.fromRGB(134, 134, 134);
-Zrx["CloseB_22"]["Size"] = UDim2.new(0, 46, 0, 26);
-Zrx["CloseB_22"]["Text"] = [[close]];
-Zrx["CloseB_22"]["Name"] = [[CloseB]];
-Zrx["CloseB_22"]["Position"] = UDim2.new(0, 482, 0, 2);
-
-
-Zrx["UICorner_23"] = Instance.new("UICorner", Zrx["CloseB_22"]);
-
-
-
-Zrx["UIGradient_24"] = Instance.new("UIGradient", Zrx["CloseB_22"]);
-Zrx["UIGradient_24"]["Rotation"] = 65;
-Zrx["UIGradient_24"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.959, Color3.fromRGB(64, 64, 64)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(64, 64, 64))};
-
-
-Zrx["LocalScript_25"] = Instance.new("LocalScript", Zrx["CloseB_22"]);
-
-
-
-Zrx["M1_26"] = Instance.new("ScrollingFrame", Zrx["Frame_3"]);
-Zrx["M1_26"]["Visible"] = false;
-Zrx["M1_26"]["BorderSizePixel"] = 0;
-Zrx["M1_26"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
-Zrx["M1_26"]["Name"] = [[M1]];
-Zrx["M1_26"]["ScrollBarImageTransparency"] = 0.75;
-Zrx["M1_26"]["Size"] = UDim2.new(0, 372, 0, 264);
-Zrx["M1_26"]["Position"] = UDim2.new(0, 156, 0, 32);
-Zrx["M1_26"]["ScrollBarThickness"] = 4;
-
-
-Zrx["UICorner_27"] = Instance.new("UICorner", Zrx["M1_26"]);
-Zrx["UICorner_27"]["CornerRadius"] = UDim.new(0, 10);
-
-
-Zrx["UIGradient_28"] = Instance.new("UIGradient", Zrx["M1_26"]);
-Zrx["UIGradient_28"]["Rotation"] = 75;
-Zrx["UIGradient_28"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
-
-
-Zrx["UICorner_29"] = Instance.new("UICorner", Zrx["Frame_3"]);
-Zrx["UICorner_29"]["CornerRadius"] = UDim.new(0, 10);
-
-
-Zrx["TextBox_2a"] = Instance.new("TextBox", Zrx["Frame_3"]);
-Zrx["TextBox_2a"]["TextStrokeTransparency"] = 0;
-Zrx["TextBox_2a"]["BorderSizePixel"] = 0;
-Zrx["TextBox_2a"]["TextStrokeColor3"] = Color3.fromRGB(142, 142, 142);
-Zrx["TextBox_2a"]["TextSize"] = 10;
-Zrx["TextBox_2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextBox_2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-Zrx["TextBox_2a"]["Size"] = UDim2.new(0.2, 0, 0.3, 0);
-Zrx["TextBox_2a"]["Position"] = UDim2.new(0, 170, 0, -32);
-Zrx["TextBox_2a"]["Text"] = [[Evade Spring Update]];
-Zrx["TextBox_2a"]["BackgroundTransparency"] = 1;
-
-
-Zrx["LocalScript_2b"] = Instance.new("LocalScript", Zrx["TextBox_2a"]);
-
-
-
-Zrx["UIGradient_2c"] = Instance.new("UIGradient", Zrx["Frame_3"]);
-Zrx["UIGradient_2c"]["Rotation"] = 75;
-Zrx["UIGradient_2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.565, Color3.fromRGB(65, 65, 65)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(65, 65, 65))};
-
-
-Zrx["M3_2d"] = Instance.new("ScrollingFrame", Zrx["Frame_3"]);
-Zrx["M3_2d"]["Visible"] = false;
-Zrx["M3_2d"]["BorderSizePixel"] = 0;
-Zrx["M3_2d"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
-Zrx["M3_2d"]["Name"] = [[M3]];
-Zrx["M3_2d"]["ScrollBarImageTransparency"] = 0.75;
-Zrx["M3_2d"]["Size"] = UDim2.new(0, 372, 0, 264);
-Zrx["M3_2d"]["Position"] = UDim2.new(0, 156, 0, 32);
-Zrx["M3_2d"]["ScrollBarThickness"] = 4;
-
-
-Zrx["UIGradient_2e"] = Instance.new("UIGradient", Zrx["M3_2d"]);
-Zrx["UIGradient_2e"]["Rotation"] = 75;
-Zrx["UIGradient_2e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
-
-
-Zrx["UICorner_2f"] = Instance.new("UICorner", Zrx["M3_2d"]);
-Zrx["UICorner_2f"]["CornerRadius"] = UDim.new(0, 10);
-
-
-Zrx["M2_30"] = Instance.new("ScrollingFrame", Zrx["Frame_3"]);
-Zrx["M2_30"]["Visible"] = false;
-Zrx["M2_30"]["BorderSizePixel"] = 0;
-Zrx["M2_30"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
-Zrx["M2_30"]["Name"] = [[M2]];
-Zrx["M2_30"]["ScrollBarImageTransparency"] = 0.75;
-Zrx["M2_30"]["Size"] = UDim2.new(0, 372, 0, 264);
-Zrx["M2_30"]["Position"] = UDim2.new(0, 156, 0, 32);
-Zrx["M2_30"]["ScrollBarThickness"] = 4;
-
-
-Zrx["UIGradient_31"] = Instance.new("UIGradient", Zrx["M2_30"]);
-Zrx["UIGradient_31"]["Rotation"] = 75;
-Zrx["UIGradient_31"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
-
-
-Zrx["UICorner_32"] = Instance.new("UICorner", Zrx["M2_30"]);
-Zrx["UICorner_32"]["CornerRadius"] = UDim.new(0, 10);
-
-
-Zrx["M4_33"] = Instance.new("ScrollingFrame", Zrx["Frame_3"]);
-Zrx["M4_33"]["Visible"] = false;
-Zrx["M4_33"]["BorderSizePixel"] = 0;
-Zrx["M4_33"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
-Zrx["M4_33"]["Name"] = [[M4]];
-Zrx["M4_33"]["ScrollBarImageTransparency"] = 0.75;
-Zrx["M4_33"]["Size"] = UDim2.new(0, 372, 0, 264);
-Zrx["M4_33"]["Position"] = UDim2.new(0, 156, 0, 32);
-Zrx["M4_33"]["ScrollBarThickness"] = 4;
-
-
-Zrx["UIGradient_34"] = Instance.new("UIGradient", Zrx["M4_33"]);
-Zrx["UIGradient_34"]["Rotation"] = 75;
-Zrx["UIGradient_34"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
-
-
-Zrx["UICorner_35"] = Instance.new("UICorner", Zrx["M4_33"]);
-Zrx["UICorner_35"]["CornerRadius"] = UDim.new(0, 10);
-
-
-Zrx["M5_36"] = Instance.new("ScrollingFrame", Zrx["Frame_3"]);
-Zrx["M5_36"]["Visible"] = false;
-Zrx["M5_36"]["BorderSizePixel"] = 0;
-Zrx["M5_36"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 86);
-Zrx["M5_36"]["Name"] = [[M5]];
-Zrx["M5_36"]["ScrollBarImageTransparency"] = 0.75;
-Zrx["M5_36"]["Size"] = UDim2.new(0, 372, 0, 264);
-Zrx["M5_36"]["Position"] = UDim2.new(0, 156, 0, 32);
-Zrx["M5_36"]["ScrollBarThickness"] = 4;
-
-
-Zrx["UIGradient_37"] = Instance.new("UIGradient", Zrx["M5_36"]);
-Zrx["UIGradient_37"]["Rotation"] = 75;
-Zrx["UIGradient_37"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
-
-
-Zrx["UICorner_38"] = Instance.new("UICorner", Zrx["M5_36"]);
-Zrx["UICorner_38"]["CornerRadius"] = UDim.new(0, 10);
-
-
-Zrx["ImageLabel_39"] = Instance.new("ImageLabel", Zrx["Frame_3"]);
-Zrx["ImageLabel_39"]["BorderSizePixel"] = 0;
-Zrx["ImageLabel_39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- Zrx["ImageLabel_39"]["ImageContent"] = ;
-Zrx["ImageLabel_39"]["Image"] = [[rbxassetid://131435763518933]];
-Zrx["ImageLabel_39"]["Size"] = UDim2.new(0, 154, 0, 164);
-Zrx["ImageLabel_39"]["BackgroundTransparency"] = 1;
-Zrx["ImageLabel_39"]["Position"] = UDim2.new(0, 0, 0, 158);
-
-
-Zrx["LgL_3a"] = Instance.new("ImageButton", Zrx["Folder_2"]);
-Zrx["LgL_3a"]["ZIndex"] = 11;
-Zrx["LgL_3a"]["BorderSizePixel"] = 0;
-Zrx["LgL_3a"]["Visible"] = false;
--- Zrx["LgL_3a"]["ImageContent"] = ;
-Zrx["LgL_3a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-Zrx["LgL_3a"]["Image"] = [[rbxassetid://131435763518933]];
-Zrx["LgL_3a"]["Size"] = UDim2.new(0, 45, 0, 45);
-Zrx["LgL_3a"]["Name"] = [[LgL]];
-Zrx["LgL_3a"]["Position"] = UDim2.new(0, 50, 0, 130);
-
-
-Zrx["LocalScript_3b"] = Instance.new("LocalScript", Zrx["LgL_3a"]);
-
-
-
-Zrx["Delta_3c"] = Instance.new("LocalScript", Zrx["LgL_3a"]);
-Zrx["Delta_3c"]["Name"] = [[Delta]];
-
-
-Zrx["UICorner_3d"] = Instance.new("UICorner", Zrx["LgL_3a"]);
-
-
-
-Zrx["UIStroke_3e"] = Instance.new("UIStroke", Zrx["LgL_3a"]);
-Zrx["UIStroke_3e"]["Thickness"] = 2.5;
-Zrx["UIStroke_3e"]["Color"] = Color3.fromRGB(255, 255, 255);
-
+Zrx.ScreenGui_1 = Instance.new("ScreenGui", game:GetService("CoreGui"));
+Zrx.ScreenGui_1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+Zrx.ScreenGui_1.DisplayOrder = 9999;
+Zrx.ScreenGui_1.ResetOnSpawn = false;
+
+Zrx.Folder_2 = Instance.new("Folder", Zrx.ScreenGui_1);
+
+Zrx.Frame_3 = Instance.new("Frame", Zrx.Folder_2);
+Zrx.Frame_3.Active = true;
+Zrx.Frame_3.SizeConstraint = Enum.SizeConstraint.RelativeYY;
+Zrx.Frame_3.BorderSizePixel = 0;
+Zrx.Frame_3.BackgroundColor3 = Color3.fromRGB(54, 54, 54);
+Zrx.Frame_3.AnchorPoint = Vector2.new(0.5, 0.5);
+Zrx.Frame_3.Size = UDim2.new(0, 532, 0, 300);
+Zrx.Frame_3.Position = UDim2.new(0, 444, 0, 178);
+
+Zrx.MainSelection_4 = Instance.new("Frame", Zrx.Frame_3);
+Zrx.Frame_3.ZIndex = 10;
+Zrx.MainSelection_4.SizeConstraint = Enum.SizeConstraint.RelativeYY;
+Zrx.MainSelection_4.BorderSizePixel = 0;
+Zrx.MainSelection_4.BackgroundColor3 = Color3.fromRGB(86, 86, 86);
+Zrx.MainSelection_4.AnchorPoint = Vector2.new(0.5, 0.5);
+Zrx.MainSelection_4.Size = UDim2.new(0, 146, 0, 292);
+Zrx.MainSelection_4.Position = UDim2.new(0, 78, 0, 150);
+Zrx.MainSelection_4.Name = [[MainSelection]];
+
+Zrx.TextLabel_5 = Instance.new("TextLabel", Zrx.MainSelection_4);
+Zrx.TextLabel_5.TextStrokeTransparency = 0;
+Zrx.TextLabel_5.BorderSizePixel = 0;
+Zrx.TextLabel_5.TextSize = 12;
+Zrx.TextLabel_5.TextStrokeColor3 = Color3.fromRGB(154, 154, 154);
+Zrx.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel_5.TextDirection = Enum.TextDirection.RightToLeft;
+Zrx.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel_5.BackgroundTransparency = 1;
+Zrx.TextLabel_5.Size = UDim2.new(0, 84, 0, 36);
+Zrx.TextLabel_5.Text = [[ZERXMODS]];
+Zrx.TextLabel_5.Position = UDim2.new(0, 12, 0, -2);
+
+Zrx.UICorner_6 = Instance.new("UICorner", Zrx.MainSelection_4);
+Zrx.UICorner_6.CornerRadius = UDim.new(0, 7);
+
+Zrx.UIGradient_7 = Instance.new("UIGradient", Zrx.MainSelection_4);
+Zrx.UIGradient_7.Rotation = 75;
+Zrx.UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.722, Color3.fromRGB(135, 135, 135)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(135, 135, 135))};
+
+Zrx.M3_8 = Instance.new("TextButton", Zrx.MainSelection_4);
+Zrx.M3_8.TextStrokeTransparency = 0;
+Zrx.M3_8.BorderSizePixel = 0;
+Zrx.M3_8.TextTransparency = 0.1;
+Zrx.M3_8.TextStrokeColor3 = Color3.fromRGB(186, 186, 186);
+Zrx.M3_8.TextSize = 10;
+Zrx.M3_8.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.M3_8.BackgroundColor3 = Color3.fromRGB(123, 123, 123);
+Zrx.M3_8.Size = UDim2.new(0, 132, 0, 28);
+Zrx.M3_8.Text = [[Auto]];
+Zrx.M3_8.Name = [[M3]];
+Zrx.M3_8.Position = UDim2.new(0, 6, 0, 92);
+
+Zrx.UICorner_9 = Instance.new("UICorner", Zrx.M3_8);
+
+Zrx.UIGradient_a = Instance.new("UIGradient", Zrx.M3_8);
+Zrx.UIGradient_a.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
+
+Zrx.LocalScript_b = Instance.new("LocalScript", Zrx.M3_8);
+
+Zrx.M2_c = Instance.new("TextButton", Zrx.MainSelection_4);
+Zrx.M2_c.TextStrokeTransparency = 0;
+Zrx.M2_c.BorderSizePixel = 0;
+Zrx.M2_c.TextTransparency = 0.1;
+Zrx.M2_c.TextStrokeColor3 = Color3.fromRGB(186, 186, 186);
+Zrx.M2_c.TextSize = 10;
+Zrx.M2_c.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.M2_c.BackgroundColor3 = Color3.fromRGB(123, 123, 123);
+Zrx.M2_c.Size = UDim2.new(0, 132, 0, 28);
+Zrx.M2_c.Text = [[Teleport]];
+Zrx.M2_c.Name = [[M2]];
+Zrx.M2_c.Position = UDim2.new(0, 6, 0, 61);
+
+Zrx.UICorner_d = Instance.new("UICorner", Zrx.M2_c);
+
+Zrx.UIGradient_e = Instance.new("UIGradient", Zrx.M2_c);
+Zrx.UIGradient_e.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
+
+Zrx.LocalScript_f = Instance.new("LocalScript", Zrx.M2_c);
+
+Zrx.M1_10 = Instance.new("TextButton", Zrx.MainSelection_4);
+Zrx.M1_10.TextStrokeTransparency = 0;
+Zrx.M1_10.BorderSizePixel = 0;
+Zrx.M1_10.TextTransparency = 0.1;
+Zrx.M1_10.TextStrokeColor3 = Color3.fromRGB(186, 186, 186);
+Zrx.M1_10.TextSize = 10;
+Zrx.M1_10.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.M1_10.BackgroundColor3 = Color3.fromRGB(123, 123, 123);
+Zrx.M1_10.Size = UDim2.new(0, 132, 0, 28);
+Zrx.M1_10.Text = [[Main]];
+Zrx.M1_10.Name = [[M1]];
+Zrx.M1_10.Position = UDim2.new(0, 6, 0, 30);
+
+Zrx.UICorner_11 = Instance.new("UICorner", Zrx.M1_10);
+
+Zrx.UIGradient_12 = Instance.new("UIGradient", Zrx.M1_10);
+Zrx.UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
+
+Zrx.LocalScript_13 = Instance.new("LocalScript", Zrx.M1_10);
+
+Zrx.M4_14 = Instance.new("TextButton", Zrx.MainSelection_4);
+Zrx.M4_14.TextStrokeTransparency = 0;
+Zrx.M4_14.BorderSizePixel = 0;
+Zrx.M4_14.TextTransparency = 0.1;
+Zrx.M4_14.TextStrokeColor3 = Color3.fromRGB(186, 186, 186);
+Zrx.M4_14.TextSize = 10;
+Zrx.M4_14.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.M4_14.BackgroundColor3 = Color3.fromRGB(123, 123, 123);
+Zrx.M4_14.Size = UDim2.new(0, 132, 0, 28);
+Zrx.M4_14.Text = [[Misc]];
+Zrx.M4_14.Name = [[M4]];
+Zrx.M4_14.Position = UDim2.new(0, 6, 0, 123);
+
+Zrx.UICorner_15 = Instance.new("UICorner", Zrx.M4_14);
+
+Zrx.UIGradient_16 = Instance.new("UIGradient", Zrx.M4_14);
+Zrx.UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
+
+Zrx.LocalScript_17 = Instance.new("LocalScript", Zrx.M4_14);
+
+Zrx.M5_18 = Instance.new("TextButton", Zrx.MainSelection_4);
+Zrx.M5_18.TextStrokeTransparency = 0;
+Zrx.M5_18.BorderSizePixel = 0;
+Zrx.M5_18.TextTransparency = 0.1;
+Zrx.M5_18.TextStrokeColor3 = Color3.fromRGB(186, 186, 186);
+Zrx.M5_18.TextSize = 10;
+Zrx.M5_18.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.M5_18.BackgroundColor3 = Color3.fromRGB(123, 123, 123);
+Zrx.M5_18.Size = UDim2.new(0, 132, 0, 28);
+Zrx.M5_18.Text = [[Other]];
+Zrx.M5_18.Name = [[M5]];
+Zrx.M5_18.Position = UDim2.new(0, 6, 0, 154);
+
+Zrx.UICorner_19 = Instance.new("UICorner", Zrx.M5_18);
+
+Zrx.UIGradient_1a = Instance.new("UIGradient", Zrx.M5_18);
+Zrx.UIGradient_1a.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(105, 105, 105))};
+
+Zrx.LocalScript_1b = Instance.new("LocalScript", Zrx.M5_18);
+
+Zrx.startup_1c = Instance.new("Frame", Zrx.Frame_3);
+Zrx.startup_1c.BorderSizePixel = 0;
+Zrx.startup_1c.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
+Zrx.startup_1c.Size = UDim2.new(0, 288, 0, 170);
+Zrx.startup_1c.Position = UDim2.new(0, 202, 0, 64);
+Zrx.startup_1c.Name = [[startup]];
+Zrx.startup_1c.BackgroundTransparency = 1;
+
+Zrx.TextLabel2_1d = Instance.new("TextLabel", Zrx.startup_1c);
+Zrx.TextLabel2_1d.TextStrokeTransparency = 0;
+Zrx.TextLabel2_1d.BorderSizePixel = 0;
+Zrx.TextLabel2_1d.TextSize = 25;
+Zrx.TextLabel2_1d.TextStrokeColor3 = Color3.fromRGB(133, 133, 133);
+Zrx.TextLabel2_1d.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel2_1d.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel2_1d.BackgroundTransparency = 1;
+Zrx.TextLabel2_1d.Size = UDim2.new(0, 96, 0, 54);
+Zrx.TextLabel2_1d.Text = [[Keyless]];
+Zrx.TextLabel2_1d.Name = [[TextLabel2]];
+Zrx.TextLabel2_1d.Position = UDim2.new(0, 140, 0, 64);
+
+Zrx.TextLabel_1e = Instance.new("TextLabel", Zrx.startup_1c);
+Zrx.TextLabel_1e.TextStrokeTransparency = 0;
+Zrx.TextLabel_1e.BorderSizePixel = 0;
+Zrx.TextLabel_1e.TextSize = 25;
+Zrx.TextLabel_1e.TextStrokeColor3 = Color3.fromRGB(133, 133, 133);
+Zrx.TextLabel_1e.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel_1e.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel_1e.BackgroundTransparency = 1;
+Zrx.TextLabel_1e.Size = UDim2.new(0, 96, 0, 54);
+Zrx.TextLabel_1e.Text = [[Simple]];
+Zrx.TextLabel_1e.Position = UDim2.new(0, 66, 0, 36);
+
+Zrx.TextLabel3_1f = Instance.new("TextLabel", Zrx.startup_1c);
+Zrx.TextLabel3_1f.TextStrokeTransparency = 0;
+Zrx.TextLabel3_1f.BorderSizePixel = 0;
+Zrx.TextLabel3_1f.TextSize = 10;
+Zrx.TextLabel3_1f.TextStrokeColor3 = Color3.fromRGB(133, 133, 133);
+Zrx.TextLabel3_1f.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel3_1f.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel3_1f.BackgroundTransparency = 1;
+Zrx.TextLabel3_1f.Size = UDim2.new(0, 58, 0, 54);
+Zrx.TextLabel3_1f.Text = [[V0.0.1]];
+Zrx.TextLabel3_1f.Name = [[TextLabel3]];
+Zrx.TextLabel3_1f.Position = UDim2.new(0, 70, 0, 60);
+
+Zrx.DeltaWindow_20 = Instance.new("LocalScript", Zrx.Frame_3);
+Zrx.DeltaWindow_20.Name = [[DeltaWindow]];
+
+Zrx.UIStroke_21 = Instance.new("UIStroke", Zrx.Frame_3);
+Zrx.UIStroke_21.Transparency = 0.5;
+Zrx.UIStroke_21.Thickness = 5;
+
+Zrx.CloseB_22 = Instance.new("TextButton", Zrx.Frame_3);
+Zrx.CloseB_22.BorderSizePixel = 0;
+Zrx.CloseB_22.TextSize = 9;
+Zrx.CloseB_22.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.CloseB_22.BackgroundColor3 = Color3.fromRGB(134, 134, 134);
+Zrx.CloseB_22.Size = UDim2.new(0, 46, 0, 26);
+Zrx.CloseB_22.Text = [[close]];
+Zrx.CloseB_22.Name = [[CloseB]];
+Zrx.CloseB_22.Position = UDim2.new(0, 482, 0, 2);
+
+Zrx.UICorner_23 = Instance.new("UICorner", Zrx.CloseB_22);
+
+Zrx.UIGradient_24 = Instance.new("UIGradient", Zrx.CloseB_22);
+Zrx.UIGradient_24.Rotation = 65;
+Zrx.UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.959, Color3.fromRGB(64, 64, 64)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(64, 64, 64))};
+
+Zrx.LocalScript_25 = Instance.new("LocalScript", Zrx.CloseB_22);
+
+Zrx.M1_26 = Instance.new("ScrollingFrame", Zrx.Frame_3);
+Zrx.M1_26.Visible = false;
+Zrx.M1_26.BorderSizePixel = 0;
+Zrx.M1_26.BackgroundColor3 = Color3.fromRGB(86, 86, 86);
+Zrx.M1_26.Name = [[M1]];
+Zrx.M1_26.ScrollBarImageTransparency = 0.75;
+Zrx.M1_26.Size = UDim2.new(0, 372, 0, 264);
+Zrx.M1_26.Position = UDim2.new(0, 156, 0, 32);
+Zrx.M1_26.ScrollBarThickness = 4;
+
+Zrx.UICorner_27 = Instance.new("UICorner", Zrx.M1_26);
+Zrx.UICorner_27.CornerRadius = UDim.new(0, 10);
+
+Zrx.UIGradient_28 = Instance.new("UIGradient", Zrx.M1_26);
+Zrx.UIGradient_28.Rotation = 75;
+Zrx.UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
+
+Zrx.UICorner_29 = Instance.new("UICorner", Zrx.Frame_3);
+Zrx.UICorner_29.CornerRadius = UDim.new(0, 10);
+
+Zrx.TextLabel_2a = Instance.new("TextLabel", Zrx.Frame_3);
+Zrx.TextLabel_2a.TextStrokeTransparency = 0;
+Zrx.TextLabel_2a.BorderSizePixel = 0;
+Zrx.TextLabel_2a.TextStrokeColor3 = Color3.fromRGB(142, 142, 142);
+Zrx.TextLabel_2a.TextSize = 10;
+Zrx.TextLabel_2a.TextColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel_2a.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.TextLabel_2a.Size = UDim2.new(0.2, 0, 0.3, 0);
+Zrx.TextLabel_2a.Position = UDim2.new(0, 170, 0, -32);
+Zrx.TextLabel_2a.Text = [[Evade Spring Update]];
+Zrx.TextLabel_2a.BackgroundTransparency = 1;
+
+Zrx.LocalScript_2b = Instance.new("LocalScript", Zrx.TextLabel_2a);
+
+Zrx.UIGradient_2c = Instance.new("UIGradient", Zrx.Frame_3);
+Zrx.UIGradient_2c.Rotation = 75;
+Zrx.UIGradient_2c.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.565, Color3.fromRGB(65, 65, 65)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(65, 65, 65))};
+
+Zrx.M3_2d = Instance.new("ScrollingFrame", Zrx.Frame_3);
+Zrx.M3_2d.Visible = false;
+Zrx.M3_2d.BorderSizePixel = 0;
+Zrx.M3_2d.BackgroundColor3 = Color3.fromRGB(86, 86, 86);
+Zrx.M3_2d.Name = [[M3]];
+Zrx.M3_2d.ScrollBarImageTransparency = 0.75;
+Zrx.M3_2d.Size = UDim2.new(0, 372, 0, 264);
+Zrx.M3_2d.Position = UDim2.new(0, 156, 0, 32);
+Zrx.M3_2d.ScrollBarThickness = 4;
+
+Zrx.UIGradient_2e = Instance.new("UIGradient", Zrx.M3_2d);
+Zrx.UIGradient_2e.Rotation = 75;
+Zrx.UIGradient_2e.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
+
+Zrx.UICorner_2f = Instance.new("UICorner", Zrx.M3_2d);
+Zrx.UICorner_2f.CornerRadius = UDim.new(0, 10);
+
+Zrx.M2_30 = Instance.new("ScrollingFrame", Zrx.Frame_3);
+Zrx.M2_30.Visible = false;
+Zrx.M2_30.BorderSizePixel = 0;
+Zrx.M2_30.BackgroundColor3 = Color3.fromRGB(86, 86, 86);
+Zrx.M2_30.Name = [[M2]];
+Zrx.M2_30.ScrollBarImageTransparency = 0.75;
+Zrx.M2_30.Size = UDim2.new(0, 372, 0, 264);
+Zrx.M2_30.Position = UDim2.new(0, 156, 0, 32);
+Zrx.M2_30.ScrollBarThickness = 4;
+
+Zrx.UIGradient_31 = Instance.new("UIGradient", Zrx.M2_30);
+Zrx.UIGradient_31.Rotation = 75;
+Zrx.UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
+
+Zrx.UICorner_32 = Instance.new("UICorner", Zrx.M2_30);
+Zrx.UICorner_32.CornerRadius = UDim.new(0, 10);
+
+Zrx.M4_33 = Instance.new("ScrollingFrame", Zrx.Frame_3);
+Zrx.M4_33.Visible = false;
+Zrx.M4_33.BorderSizePixel = 0;
+Zrx.M4_33.BackgroundColor3 = Color3.fromRGB(86, 86, 86);
+Zrx.M4_33.Name = [[M4]];
+Zrx.M4_33.ScrollBarImageTransparency = 0.75;
+Zrx.M4_33.Size = UDim2.new(0, 372, 0, 264);
+Zrx.M4_33.Position = UDim2.new(0, 156, 0, 32);
+Zrx.M4_33.ScrollBarThickness = 4;
+
+Zrx.UIGradient_34 = Instance.new("UIGradient", Zrx.M4_33);
+Zrx.UIGradient_34.Rotation = 75;
+Zrx.UIGradient_34.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
+
+Zrx.UICorner_35 = Instance.new("UICorner", Zrx.M4_33);
+Zrx.UICorner_35.CornerRadius = UDim.new(0, 10);
+
+Zrx.M5_36 = Instance.new("ScrollingFrame", Zrx.Frame_3);
+Zrx.M5_36.Visible = false;
+Zrx.M5_36.BorderSizePixel = 0;
+Zrx.M5_36.BackgroundColor3 = Color3.fromRGB(86, 86, 86);
+Zrx.M5_36.Name = [[M5]];
+Zrx.M5_36.ScrollBarImageTransparency = 0.75;
+Zrx.M5_36.Size = UDim2.new(0, 372, 0, 264);
+Zrx.M5_36.Position = UDim2.new(0, 156, 0, 32);
+Zrx.M5_36.ScrollBarThickness = 4;
+
+Zrx.UIGradient_37 = Instance.new("UIGradient", Zrx.M5_36);
+Zrx.UIGradient_37.Rotation = 75;
+Zrx.UIGradient_37.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.193, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(92, 92, 92))};
+
+Zrx.UICorner_38 = Instance.new("UICorner", Zrx.M5_36);
+Zrx.UICorner_38.CornerRadius = UDim.new(0, 10);
+
+Zrx.ImageLabel_39 = Instance.new("ImageLabel", Zrx.Frame_3);
+Zrx.ImageLabel_39.BorderSizePixel = 0;
+Zrx.ImageLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Zrx.ImageLabel_39.Image = [[rbxassetid://131435763518933]];
+Zrx.ImageLabel_39.Size = UDim2.new(0, 154, 0, 164);
+Zrx.ImageLabel_39.BackgroundTransparency = 1;
+Zrx.ImageLabel_39.Position = UDim2.new(0, 0, 0, 158);
+
+Zrx.LgL_3a = Instance.new("ImageButton", Zrx.Folder_2);
+Zrx.LgL_3a.ZIndex = 11;
+Zrx.LgL_3a.BorderSizePixel = 0;
+Zrx.LgL_3a.Visible = false;
+Zrx.LgL_3a.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
+Zrx.LgL_3a.Image = [[rbxassetid://131435763518933]];
+Zrx.LgL_3a.Size = UDim2.new(0, 45, 0, 45);
+Zrx.LgL_3a.Name = [[LgL]];
+Zrx.LgL_3a.Position = UDim2.new(0, 50, 0, 130);
+
+Zrx.LocalScript_3b = Instance.new("LocalScript", Zrx.LgL_3a);
+
+Zrx.Delta_3c = Instance.new("LocalScript", Zrx.LgL_3a);
+Zrx.Delta_3c.Name = [[Delta]];
+
+Zrx.UICorner_3d = Instance.new("UICorner", Zrx.LgL_3a);
+
+Zrx.UIStroke_3e = Instance.new("UIStroke", Zrx.LgL_3a);
+Zrx.UIStroke_3e.Thickness = 2.5;
+Zrx.UIStroke_3e.Color = Color3.fromRGB(255, 255, 255);
 
 local function C_b()
-	local script = Zrx["LocalScript_b"];
-	local StarterGui = game:GetService("StarterGui")	
-	
-	local function notify(title, text)	
-	    pcall(function()	
-	        StarterGui:SetCore("SendNotification", {	
-	            Title = title,	
-	            Text = text,	
-	            Duration = 5,	
-	        })	
-	    end)	
-	end	
-	
-	script.Parent.Activated:Connect(function()	
-	    notify("information", "this feature not available yet")	
-	end)	
+local script = Zrx.LocalScript_b;
+local StarterGui = game:GetService("StarterGui")
+
+local function notify(title, text)
+pcall(function()
+StarterGui:SetCore("SendNotification", {
+Title = title,
+Text = text,
+Duration = 5,
+})
+end)
+end
+
+script.Parent.Activated:Connect(function()
+notify("information", "this feature not available yet")
+end)
 end;
 task.spawn(C_b);
 local function C_f()
-	local script = Zrx["LocalScript_f"];
-	local StarterGui = game:GetService("StarterGui")	
-	
-	local function notify(title, text)	
-	    pcall(function()	
-	        StarterGui:SetCore("SendNotification", {	
-	            Title = title,	
-	            Text = text,	
-	            Duration = 5,	
-	        })	
-	    end)	
-	end	
-	
-	script.Parent.Activated:Connect(function()	
-	    notify("information", "this feature not available yet")	
-	end)	
+local script = Zrx.LocalScript_f;
+local StarterGui = game:GetService("StarterGui")
+
+local function notify(title, text)
+pcall(function()
+StarterGui:SetCore("SendNotification", {
+Title = title,
+Text = text,
+Duration = 5,
+})
+end)
+end
+
+script.Parent.Activated:Connect(function()
+notify("information", "this feature not available yet")
+end)
 end;
 task.spawn(C_f);
 local function C_13()
-	local script = Zrx["LocalScript_13"];
-	local Open = script.Parent.Parent.Parent.M1	
-	
-	script.Parent.Activated:Connect(function()	
-	 Open.Visible = not Open.Visible	
-	end)	
+local script = Zrx.LocalScript_13;
+local Open = script.Parent.Parent.Parent.M1
+
+script.Parent.Activated:Connect(function()
+ Open.Visible = not Open.Visible
+end)
 end;
 task.spawn(C_13);
 local function C_17()
-	local script = Zrx["LocalScript_17"];
-	local StarterGui = game:GetService("StarterGui")	
-	
-	local function notify(title, text)	
-	    pcall(function()	
-	        StarterGui:SetCore("SendNotification", {	
-	            Title = title,	
-	            Text = text,	
-	            Duration = 5,	
-	        })	
-	    end)	
-	end	
-	
-	script.Parent.Activated:Connect(function()	
-	    notify("information", "this feature not available yet")	
-	end)	
+local script = Zrx.LocalScript_17;
+local StarterGui = game:GetService("StarterGui")
+
+local function notify(title, text)
+pcall(function()
+StarterGui:SetCore("SendNotification", {
+Title = title,
+Text = text,
+Duration = 5,
+})
+end)
+end
+
+script.Parent.Activated:Connect(function()
+notify("information", "this feature not available yet")
+end)
 end;
 task.spawn(C_17);
 local function C_1b()
-	local script = Zrx["LocalScript_1b"];
-	local StarterGui = game:GetService("StarterGui")	
-	
-	local function notify(title, text)	
-	    pcall(function()	
-	        StarterGui:SetCore("SendNotification", {	
-	            Title = title,	
-	            Text = text,	
-	            Duration = 5,	
-	        })	
-	    end)	
-	end	
-	
-	script.Parent.Activated:Connect(function()	
-	    notify("information", "this feature not available yet")	
-	end)	
+local script = Zrx.LocalScript_1b;
+local StarterGui = game:GetService("StarterGui")
+
+local function notify(title, text)
+pcall(function()
+StarterGui:SetCore("SendNotification", {
+Title = title,
+Text = text,
+Duration = 5,
+})
+end)
+end
+
+script.Parent.Activated:Connect(function()
+notify("information", "this feature not available yet")
+end)
 end;
 task.spawn(C_1b);
 local function C_20()
-	local script = Zrx["DeltaWindow_20"];
-	local frame = script.Parent	
-	local userInputService = game:GetService("UserInputService")	
-	
-	local dragging = false	
-	local dragInput	
-	local dragStart	
-	local startPos	
-	
-	local function update(input)	
-		local delta = input.Position - dragStart	
-		-- Update posisi frame (hanya bagian Offset)	
-		frame.Position = UDim2.new(	
-			startPos.X.Scale, 	
-			startPos.X.Offset + delta.X, 	
-			startPos.Y.Scale, 	
-			startPos.Y.Offset + delta.Y	
-		)	
-	end	
-	
-	frame.InputBegan:Connect(function(input)	
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then	
-			dragging = true	
-			dragStart = input.Position	
-			startPos = frame.Position	
-	
-			input.Changed:Connect(function()	
-				if input.UserInputState == Enum.UserInputState.End then	
-					dragging = false	
-				end	
-			end)	
-		end	
-	end)	
-	
-	frame.InputChanged:Connect(function(input)	
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then	
-			dragInput = input	
-		end	
-	end)	
-	
-	userInputService.InputChanged:Connect(function(input)	
-		if input == dragInput and dragging then	
-			update(input)	
-		end	
-	end)	
+local script = Zrx.DeltaWindow_20;
+local frame = script.Parent
+local userInputService = game:GetService("UserInputService")
+
+local dragging = false
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+local delta = input.Position - dragStart
+frame.Position = UDim2.new(
+startPos.X.Scale, 
+startPos.X.Offset + delta.X, 
+startPos.Y.Scale, 
+startPos.Y.Offset + delta.Y
+)
+end
+
+frame.InputBegan:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+dragging = true
+dragStart = input.Position
+startPos = frame.Position
+
+input.Changed:Connect(function()
+if input.UserInputState == Enum.UserInputState.End then
+dragging = false
+end
+end)
+end
+end)
+
+frame.InputChanged:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+dragInput = input
+end
+end)
+
+userInputService.InputChanged:Connect(function(input)
+if input == dragInput and dragging then
+update(input)
+end
+end)
 end;
 task.spawn(C_20);
 local function C_25()
-	local script = Zrx["LocalScript_25"];
-	local toOpen = script.Parent.Parent.Parent.Frame	
-	local toClose = script.Parent.Parent.Parent.LgL	
-	
-	script.parent.Activated:Connect(function()	
-	 toOpen.Visible = false	
-	 toClose.Visible = true	
-	end)	
+local script = Zrx.LocalScript_25;
+local toOpen = script.Parent.Parent.Parent.Frame
+local toClose = script.Parent.Parent.Parent.LgL
+
+script.parent.Activated:Connect(function()
+ toOpen.Visible = false
+ toClose.Visible = true
+end)
 end;
 task.spawn(C_25);
 local function C_2b()
-	local script = Zrx["LocalScript_2b"];
-	local MarketplaceService = game:GetService("MarketplaceService")
-local textBox = script.Parent
+local script = Zrx.LocalScript_2b;
+local MarketplaceService = game:GetService("MarketplaceService")
+local textLabel = script.Parent
 
 local function displayExperienceName()
-	local success, info = pcall(function()
-		return MarketplaceService:GetProductInfo(game.PlaceId)
-	end)
+local success, info = pcall(function()
+return MarketplaceService:GetProductInfo(game.PlaceId)
+end)
 
-	if success and info and info.Name then
-		textBox.Text = info.Name
-	else
-		textBox.Text = "Experience"
-	end
+if success and info and info.Name then
+textLabel.Text = info.Name
+else
+textLabel.Text = "Experience"
+end
 end
 
-displayExperienceName()	
+displayExperienceName()
 end;
 task.spawn(C_2b);
 local function C_3b()
-	local script = Zrx["LocalScript_3b"];
-	local toOpen = script.Parent.Parent.Frame	
-	local toClose = script.Parent	
-	
-	script.Parent.Activated:Connect(function()	
-	 toOpen.Visible = true	
-	 toClose.Visible = false	
-	end)	
+local script = Zrx.LocalScript_3b;
+local toOpen = script.Parent.Parent.Frame
+local toClose = script.Parent
+
+script.Parent.Activated:Connect(function()
+ toOpen.Visible = true
+ toClose.Visible = false
+end)
 end;
 task.spawn(C_3b);
 local function C_3c()
-	local script = Zrx["Delta_3c"];
-	local button = script.Parent	
-	local userInputService = game:GetService("UserInputService")	
-	
-	local dragging = false	
-	local dragInput	
-	local dragStart	
-	local startPos	
-	
-	local function update(input)	
-	    local delta = input.Position - dragStart	
-	    -- Menghitung posisi baru berdasarkan pergerakan mouse/jari	
-	    button.Position = UDim2.new(	
-	        startPos.X.Scale, 	
-	        startPos.X.Offset + delta.X, 	
-	        startPos.Y.Scale, 	
-	        startPos.Y.Offset + delta.Y	
-	    )	
-	end	
-	
-	-- Saat tombol mulai ditekan	
-	button.InputBegan:Connect(function(input)	
-	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then	
-	        dragging = true	
-	        dragStart = input.Position	
-	        startPos = button.Position	
-	
-	        -- Mengamati pergerakan input	
-	        input.Changed:Connect(function()	
-	            if input.UserInputState == Enum.UserInputState.End then	
-	                dragging = false	
-	            end	
-	        end)	
-	    end	
-	end)	
-	
-	-- Saat mouse/jari bergerak di atas tombol	
-	button.InputChanged:Connect(function(input)	
-	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then	
-	        dragInput = input	
-	    end	
-	end)	
-	
-	-- Update posisi secara global melalui UserInputService agar drag tidak "terlepas" saat gerak cepat	
-	userInputService.InputChanged:Connect(function(input)	
-	    if input == dragInput and dragging then	
-	        update(input)	
-	    end	
-	end)	
+local script = Zrx.Delta_3c;
+local button = script.Parent
+local userInputService = game:GetService("UserInputService")
+
+local dragging = false
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+local delta = input.Position - dragStart
+button.Position = UDim2.new(
+startPos.X.Scale, 
+startPos.X.Offset + delta.X, 
+startPos.Y.Scale, 
+startPos.Y.Offset + delta.Y
+)
+end
+
+button.InputBegan:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+dragging = true
+dragStart = input.Position
+startPos = button.Position
+
+input.Changed:Connect(function()
+if input.UserInputState == Enum.UserInputState.End then
+dragging = false
+end
+end)
+end
+end)
+
+button.InputChanged:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+dragInput = input
+end
+end)
+
+userInputService.InputChanged:Connect(function(input)
+if input == dragInput and dragging then
+update(input)
+end
+end)
 end;
 task.spawn(C_3c);
